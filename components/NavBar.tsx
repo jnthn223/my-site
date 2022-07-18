@@ -4,8 +4,10 @@ import { Icon } from '@iconify/react';
 function NavBar() {
 	return (
 		<header className='relative flex justify-between items-center mt-6 font-serif px-1 after:absolute after:content-[""] after:w-full after:h-[2px] after:bg-black after:-bottom-2'>
-			<div className='font-bold'>
-				<a href='#'>Jonathan Aplacador</a>
+			<div className='font-bold hover:scale-105 focus:scale-105 active:scale-105 transition'>
+				<a className='' href='#'>
+					Jonathan Aplacador
+				</a>
 			</div>
 			<nav className='flex space-x-6 items-center'>
 				<ul className='hidden flex-row lg:flex space-x-6'>

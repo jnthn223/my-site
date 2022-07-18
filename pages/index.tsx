@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import HeroSection from '../components/HeroSection';
 import NavBar from '../components/NavBar';
 
 const Home: NextPage = () => {
@@ -13,8 +14,9 @@ const Home: NextPage = () => {
 			</Head>
 
 			<main className='w-full min-h-screen overflow-scroll '>
-				<div className='wrapper'>
+				<div className='wrapper space-y-10'>
 					<NavBar />
+					<HeroSection />
 				</div>
 			</main>
 		</>

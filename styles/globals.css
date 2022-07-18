@@ -10,4 +10,12 @@
 		width: clamp(360px, 90vw, 1248px);
 		margin: 0 auto;
 	}
+	.h-1-grow {
+		/* @apply text-[32px] md:text-[96px]; */
+		font-size: clamp(32px, 5vw, 96px);
+	}
+	.astronaut-frame-grow {
+		width: clamp(313px, 45vw, 701px);
+		height: clamp(219px, 45vh, 461px);
+	}
 }
