@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import AboutSection from '../components/AboutSection';
 import HeroSection from '../components/HeroSection';
 import NavBar from '../components/NavBar';
 
@@ -13,10 +14,12 @@ const Home: NextPage = () => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<main className='w-full min-h-screen overflow-scroll '>
-				<div className='wrapper space-y-10'>
+			<main className='w-full min-h-screen overflow-x-auto '>
+				<div className='wrapper flex flex-col space-y-12'>
 					<NavBar />
 					<HeroSection />
+					<AboutSection />
+					<AboutSection />
 				</div>
 			</main>
 		</>

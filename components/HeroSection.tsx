@@ -7,7 +7,7 @@ import astronaut_desktop from '../images/Astronaut-Desktop.png';
 function HeroSection() {
 	const { width, height } = useWindowDimensions();
 	return (
-		<div className='grid place-items-center font-light  text-center'>
+		<section className='grid place-items-center font-light  text-center'>
 			<h1 className='w-[90%] md:w-full  h-1-grow'>
 				Build <span className='font-serif font-bold'>Web Applications</span> For
 			</h1>
@@ -23,7 +23,7 @@ function HeroSection() {
 				The <span className='font-serif font-bold'>World</span> to{' '}
 				<span className='font-serif font-bold'>Experience</span>.
 			</h1>
-		</div>
+		</section>
 	);
 }
 

@@ -16,6 +16,9 @@
 	}
 	.astronaut-frame-grow {
 		width: clamp(313px, 45vw, 701px);
-		height: clamp(219px, 45vh, 461px);
+		height: clamp(219px, 25vw, 461px);
+	}
+	.about-text-grow {
+		font-size: clamp(1.25rem, 2.5vw, 2.5rem);
 	}
 }
