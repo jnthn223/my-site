@@ -43,10 +43,10 @@ function ProjectCard({ project }: ProjectCardProps) {
 
 	return (
 		<article
-			className='grid gap-8  mb-8'
+			className='grid gap-8  mb-8 bg-red-200'
 			style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(342px, 1fr))' }}
 		>
-			<div className='relative h-[70%] lg:h-[100%]'>
+			<div className='relative  h-[70%] lg:h-[100%]'>
 				<Image
 					src={project.photoURL}
 					layout='responsive'

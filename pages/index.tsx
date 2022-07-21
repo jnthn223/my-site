@@ -5,6 +5,7 @@ import AboutSection from '../components/AboutSection';
 import HeroSection from '../components/HeroSection';
 import NavBar from '../components/NavBar';
 import ProjectSection from '../components/ProjectSection';
+import SkillSection from '../components/SkillSection';
 
 const Home: NextPage = () => {
 	return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
 					<HeroSection />
 					<AboutSection />
 					<ProjectSection />
+					<SkillSection />
 				</div>
 			</main>
 		</>
