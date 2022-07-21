@@ -16,6 +16,7 @@ function HeroSection() {
 					<Image
 						src={width && width <= 768 ? astronaut_mobile : astronaut_desktop}
 						layout='fixed'
+						priority
 					></Image>
 				</div>
 			</div>

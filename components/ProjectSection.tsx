@@ -43,7 +43,7 @@ function ProjectCard({ project }: ProjectCardProps) {
 
 	return (
 		<article
-			className='grid gap-8  mb-8 bg-red-200'
+			className='grid gap-8  mb-8 '
 			style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(342px, 1fr))' }}
 		>
 			<div className='relative  h-[70%] lg:h-[100%]'>
@@ -81,7 +81,7 @@ function ProjectCard({ project }: ProjectCardProps) {
 							height='24'
 						/>
 					</a>
-					<a className='btn-naked transition' href='#'>
+					<a className='btn-naked transition-all' href='#'>
 						Github Code
 					</a>
 				</div>

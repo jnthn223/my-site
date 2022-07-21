@@ -24,17 +24,13 @@
 	.btn-naked {
 		@apply relative;
 	}
-	.btn-naked:hover::after,
-	.btn-naked:active::after,
-	.btn-naked:focus::after {
+	.btn-naked:hover::after {
 		@apply absolute content-[""] -bottom-2 left-0 w-full h-px bg-black;
 	}
 	.btn-outline {
 		@apply py-[.75em] px-[1em] border-black border rounded-md;
 	}
-	.btn-outline:hover,
-	.btn-outline:active,
-	.btn-outline:focus {
+	.btn-outline:hover {
 		@apply text-white bg-black;
 	}
 }
