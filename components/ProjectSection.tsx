@@ -43,7 +43,7 @@ function ProjectCard({ project }: ProjectCardProps) {
 
 	return (
 		<article
-			className='grid gap-8  mb-8 '
+			className='grid gap-8  mb-8 overflow-hidden'
 			style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(342px, 1fr))' }}
 		>
 			<div className='relative  h-[70%] lg:h-[100%]'>
