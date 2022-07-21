@@ -4,6 +4,7 @@ import Image from 'next/image';
 import AboutSection from '../components/AboutSection';
 import HeroSection from '../components/HeroSection';
 import NavBar from '../components/NavBar';
+import ProjectSection from '../components/ProjectSection';
 
 const Home: NextPage = () => {
 	return (
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
 					<NavBar />
 					<HeroSection />
 					<AboutSection />
-					<AboutSection />
+					<ProjectSection />
 				</div>
 			</main>
 		</>

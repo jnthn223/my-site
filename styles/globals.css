@@ -21,4 +21,20 @@
 	.about-text-grow {
 		font-size: clamp(1.25rem, 2.5vw, 2.5rem);
 	}
+	.btn-naked {
+		@apply relative;
+	}
+	.btn-naked:hover::after,
+	.btn-naked:active::after,
+	.btn-naked:focus::after {
+		@apply absolute content-[""] -bottom-2 left-0 w-full h-px bg-black;
+	}
+	.btn-outline {
+		@apply py-[.75em] px-[1em] border-black border rounded-md;
+	}
+	.btn-outline:hover,
+	.btn-outline:active,
+	.btn-outline:focus {
+		@apply text-white bg-black;
+	}
 }

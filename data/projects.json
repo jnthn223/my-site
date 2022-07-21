@@ -1,0 +1,32 @@
+[
+	{
+		"id": "1",
+		"title": "Netflix Clone Web App",
+		"type": "Full-Stack Development",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, leo elementum praesent vitae tempor duis duis. Feugiat facilisi vestibulum venenatis faucibus mi dignissim ac feugiat aliquet. Facilisis quam neque, sed sapien, convallis magna. Pellentesque cras in at eget dapibus. Rhoncus et sit ac viverra est. Magna urna eget eget quis. ",
+		"photoURL": "https://images.unsplash.com/photo-1616469829941-c7200edec809?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+		"technologies": ["Next.js", "Express.js", "MongoDB", "Tailwind CSS"],
+		"liveLink": "",
+		"githubLink": ""
+	},
+	{
+		"id": "2",
+		"title": "E-Commerce Web Application",
+		"type": "Full-Stack Development",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, leo elementum praesent vitae tempor duis duis. Feugiat facilisi vestibulum venenatis faucibus mi dignissim ac feugiat aliquet. Facilisis quam neque, sed sapien, convallis magna. Pellentesque cras in at eget dapibus. Rhoncus et sit ac viverra est. Magna urna eget eget quis. ",
+		"photoURL": "https://images.unsplash.com/photo-1487014679447-9f8336841d58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1005&q=80",
+		"technologies": ["Next.js", "Express.js", "MongoDB", "Tailwind CSS"],
+		"liveLink": "",
+		"githubLink": ""
+	},
+	{
+		"id": "3",
+		"title": "Trello Clone",
+		"type": "Full-Stack Development",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, leo elementum praesent vitae tempor duis duis. Feugiat facilisi vestibulum venenatis faucibus mi dignissim ac feugiat aliquet. Facilisis quam neque, sed sapien, convallis magna. Pellentesque cras in at eget dapibus. Rhoncus et sit ac viverra est. Magna urna eget eget quis. ",
+		"photoURL": "https://images.unsplash.com/photo-1476242906366-d8eb64c2f661?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+		"technologies": ["Next.js", "Express.js", "MongoDB", "Tailwind CSS"],
+		"liveLink": "",
+		"githubLink": ""
+	}
+]
