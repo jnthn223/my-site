@@ -3,7 +3,7 @@ import React from 'react';
 
 function Contact() {
 	return (
-		<section className='min-h-screen  bg-black text-white grid place-content-center gap-16'>
+		<section id='contact' className='min-h-screen  bg-black text-white grid place-content-center gap-16'>
 			<h3 className='font-serif text-center text-[32px] lg:text-[48px] w-[85%] lg:w-[50%] m-auto'>
 				If you’re interested in hiring me, send me an email at{' '}
 				<span className='font-bold break-words underline cursor-pointer'>

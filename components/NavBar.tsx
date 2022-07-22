@@ -25,13 +25,13 @@ function NavBar() {
 			<nav className='flex space-x-6 items-center'>
 				<ul className='hidden flex-row lg:flex space-x-6'>
 					<li className='hover:font-black focus:font-black active:font-black transition'>
-						<a href='#'>About</a>
+						<a href='#about'>About</a>
 					</li>
 					<li className='hover:font-black focus:font-black active:font-black transition'>
-						<a href='#'>Projects</a>
+						<a href='#projects'>Projects</a>
 					</li>
 					<li className='hover:font-black focus:font-black active:font-black transition'>
-						<a href='#'>Contact</a>
+						<a href='#contact'>Contact</a>
 					</li>
 				</ul>
 				<div className='flex space-x-4 text-black dark:text-white'>

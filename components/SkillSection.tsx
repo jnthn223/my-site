@@ -12,7 +12,7 @@ function SkillSection() {
 		'Tailwind CSS',
 	];
 	return (
-		<section>
+		<section id='skills'>
 			<SectionHeader title='Technology Skills' number='03' />
 			<div className=' grid place-items-center my-[25vh] '>
 				<div className='flex flex-wrap justify-evenly items-center gap-16 md:gap-24'>

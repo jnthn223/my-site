@@ -3,7 +3,7 @@ import SectionHeader from './SectionHeader';
 
 function AboutSection() {
 	return (
-		<section className=''>
+		<section className='' id='about'>
 			<SectionHeader number='01' title='About' />
 			<h3 className='about-text-grow text-center leading-[2.0] w-[85%] mx-auto pt-12'>
 				<span className='font-serif font-bold'>Hello Everyone!</span> My name is{' '}
