@@ -1,11 +1,13 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import useWindowDimensions from '../hooks/useWindowDimension';
 import astronaut_mobile from '../images/Astronaut-Mobile.png';
 import astronaut_desktop from '../images/Astronaut-Desktop.png';
 
 function HeroSection() {
 	const { width, height } = useWindowDimensions();
+	const scrollText = 'Scroll To See More ';
+
 	return (
 		<section className='grid place-items-center font-light  text-center'>
 			<h1 className='w-[90%] md:w-full  h-1-grow'>
@@ -20,6 +22,19 @@ function HeroSection() {
 							priority
 						></Image>
 					</div>
+				</div>
+				<div className='circle'>
+					<p className='absolute w-full h-full animate-spinningText'>
+						{scrollText.split('').map((char, i) => (
+							<span
+								className={`absolute  left-[50%]  text-[1.2em] inline `}
+								style={{ transformOrigin: '0 75px', transform: `rotate(${i * 19}deg)` }}
+								key={char + i}
+							>
+								{char}
+							</span>
+						))}
+					</p>
 				</div>
 			</div>
 			<h1 className='w-[90%] md:w-full  h-1-grow'>

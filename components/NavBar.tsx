@@ -121,17 +121,17 @@ function NavBar() {
 						</li>
 					</ul>
 				</nav>
-				<footer className='w-full flex justify-between px-2 py-4 items-center border-t-2 border-black dark:border-white'>
+				<footer className='w-full flex justify-between px-4 py-4 items-center border-t-2 border-black dark:border-white'>
 					<h2 className='font-serif font-bold text-xl'>Socials:</h2>
 					<div className='flex items-center space-x-4'>
 						<a href='#' className='hover:scale-105 transition-all'>
-							<Icon icon='cib:linkedin' height='min(60px,5vw)' />
+							<Icon icon='cib:linkedin' height='min(65px,7vw)' />
 						</a>
 						<a href='#' className='hover:scale-105 transition-all'>
-							<Icon icon='akar-icons:facebook-fill' height='min(60px,5vw)' />
+							<Icon icon='akar-icons:facebook-fill' height='min(65px,7vw)' />
 						</a>
 						<a href='#' className='hover:scale-105 transition-all'>
-							<Icon icon='mdi:gmail' height='min(60px,5vw)' />
+							<Icon icon='mdi:gmail' height='min(65px,7vw)' />
 						</a>
 					</div>
 				</footer>
