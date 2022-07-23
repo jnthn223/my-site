@@ -4,7 +4,7 @@ import React from 'react';
 function Contact() {
 	return (
 		<section id='contact' className='min-h-screen  bg-black text-white grid place-content-center gap-16'>
-			<h3 className='font-serif text-center text-[32px] lg:text-[48px] w-[85%] lg:w-[50%] m-auto'>
+			<h3 className='font-serif text-center text-[32px] lg:text-[48px] w-[70%] lg:w-[50%] m-auto'>
 				If you’re interested in hiring me, send me an email at{' '}
 				<span className='font-bold break-words underline cursor-pointer'>
 					aplacadorjonathan@gmail.com{' '}
@@ -13,13 +13,13 @@ function Contact() {
 			</h3>
 			<div className='flex space-x-4 w-full justify-center text-white gap-6'>
 				<a href='#' className='hover:scale-105 transition-all'>
-					<Icon icon='cib:linkedin' height='60' />
+					<Icon icon='cib:linkedin' height='min(60px,5vw)' />
 				</a>
 				<a href='#' className='hover:scale-105 transition-all'>
-					<Icon icon='akar-icons:facebook-fill' height='60' />
+					<Icon icon='akar-icons:facebook-fill' height='min(60px,5vw)' />
 				</a>
 				<a href='#' className='hover:scale-105 transition-all'>
-					<Icon icon='mdi:gmail' height='60' />
+					<Icon icon='mdi:gmail' height='min(60px,5vw)' />
 				</a>
 			</div>
 			<div className='block'>
