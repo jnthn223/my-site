@@ -51,10 +51,13 @@ function ProjectCard({ project, direction }: ProjectCardProps) {
 	const [isCardVisible, setIsCardVisible] = useState(false);
 
 	useEffect(() => {
-		const observer = new IntersectionObserver((entries) => {
-			setIsCardVisible(entries[0].isIntersecting);
-			if (entries[0].isIntersecting) observer.unobserve(entries[0].target);
-		});
+		const observer = new IntersectionObserver(
+			(entries) => {
+				setIsCardVisible(entries[0].isIntersecting);
+				if (entries[0].isIntersecting) observer.unobserve(entries[0].target);
+			},
+			{ threshold: 0.5, rootMargin: '100px' }
+		);
 		if (articleRef.current) {
 			observer.observe(articleRef.current);
 		}
@@ -64,8 +67,8 @@ function ProjectCard({ project, direction }: ProjectCardProps) {
 		<article
 			ref={articleRef}
 			id='projects'
-			className={`grid gap-12 my-16  lg:my-28 relative ease-in-out duration-[0.9s]  ${
-				isCardVisible ? 'translate-y-0 opacity-1' : 'translate-y-full opacity-0'
+			className={`grid gap-12 my-16  lg:my-28 relative ease-in duration-300  ${
+				isCardVisible ? 'translate-y-0 opacity-1' : 'translate-y-1/4 opacity-0'
 			} `}
 			style={{
 				gridTemplateColumns: 'repeat(auto-fit, minmax(342px, 1fr))',
