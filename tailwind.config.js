@@ -10,6 +10,7 @@ module.exports = {
 		extend: {
 			animation: {
 				spinningText: 'spin 10s linear infinite',
+				fadeIn: 'slideUp 300ms ease-in',
 			},
 			keyframes: {
 				spin: {
@@ -18,6 +19,16 @@ module.exports = {
 					},
 					'100%': {
 						transform: 'rotate(0deg)',
+					},
+				},
+				slideUp: {
+					from: {
+						opacity: 0,
+						transform: 'translateY(-100%)',
+					},
+					to: {
+						opacity: 1,
+						transform: 'translateY(0%)',
 					},
 				},
 			},

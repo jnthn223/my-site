@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import SectionHeader from './SectionHeader';
 import Image from 'next/image';
 import projectData from '../data/projects.json';
 import useWindowDimensions from '../hooks/useWindowDimension';
 import project1 from '../images/project1.png';
 import { Icon } from '@iconify/react';
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 interface IProject {
 	id: string;
@@ -19,11 +20,13 @@ interface IProject {
 
 function ProjectSection() {
 	const projects: IProject[] = projectData;
+
 	return (
 		<section>
 			<SectionHeader number='02' title='Projects' />
 			{projects?.map((project: IProject, i) => {
 				let { id, title, type, photoURL, description, technologies, liveLink, githubLink } = project;
+
 				return (
 					<ProjectCard
 						key={id}
@@ -43,11 +46,27 @@ interface ProjectCardProps {
 
 function ProjectCard({ project, direction }: ProjectCardProps) {
 	const { width, height } = useWindowDimensions();
+	const articleRef = useRef<HTMLDivElement | null>(null);
+	// const { isVisible } = useIntersectionObserver(articleRef.current && articleRef.current );
+	const [isCardVisible, setIsCardVisible] = useState(false);
+
+	useEffect(() => {
+		const observer = new IntersectionObserver((entries) => {
+			setIsCardVisible(entries[0].isIntersecting);
+			if (entries[0].isIntersecting) observer.unobserve(entries[0].target);
+		});
+		if (articleRef.current) {
+			observer.observe(articleRef.current);
+		}
+	}, []);
 
 	return (
 		<article
+			ref={articleRef}
 			id='projects'
-			className='grid gap-12 my-16  lg:my-28 relative '
+			className={`grid gap-12 my-16  lg:my-28 relative ease-in-out duration-[0.9s]  ${
+				isCardVisible ? 'translate-y-0 opacity-1' : 'translate-y-full opacity-0'
+			} `}
 			style={{
 				gridTemplateColumns: 'repeat(auto-fit, minmax(342px, 1fr))',
 				gridTemplateRows: 'repeat(auto-fit, 1fr)',

@@ -11,11 +11,10 @@ function HeroSection() {
 	const onMouseMove = (e: any) => {
 		const x = (window.innerWidth - e.screenX * -5) / 100;
 		const y = (window.innerHeight - e.screenY * -5) / 100;
-		// console.log({ top: e.screenY, left: e.screenX });
+
 		if (astronautImg.current) {
 			astronautImg.current.style.transform = `translate(${x}px, ${y}px)`;
 		}
-		console.log(x, y);
 	};
 
 	return (
