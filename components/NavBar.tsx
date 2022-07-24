@@ -18,7 +18,7 @@ function NavBar() {
 	};
 	return (
 		<>
-			<header className='relative flex justify-between items-center mt-6 font-serif px-1 after:absolute after:content-[""] after:w-full after:h-[2px] after:bg-black after:-bottom-2'>
+			<header className='relative flex justify-between items-center mt-6 font-serif px-1 after:absolute after:content-[""] after:w-full after:h-[2px] after:bg-black after:dark:bg-white after:-bottom-2'>
 				<div className='font-bold hover:scale-105 focus:scale-105 active:scale-105 transition'>
 					<a className='' href='#'>
 						Jonathan Aplacador
